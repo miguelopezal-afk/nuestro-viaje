@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#163f46" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Nuestro Viaje" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Nuestro Viaje</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-label="Cuenta regresiva del viaje">
+        <img class="hero-image" src="assets/viaje-hero.png" alt="Mesa de viaje junto a una ventana de aeropuerto al amanecer" />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="kicker">Nuestro viaje empieza en</p>
+          <div class="countdown" aria-live="polite">
+            <article><strong id="days">--</strong><span>Días</span></article>
+            <article><strong id="hours">--</strong><span>Horas</span></article>
+            <article><strong id="minutes">--</strong><span>Min</span></article>
+            <article><strong id="seconds">--</strong><span>Seg</span></article>
+          </div>
+          <h1>San Salvador a Europa</h1>
+          <p class="date-line">Martes 7 de julio de 2026 - 7:25 PM</p>
+        </div>
+      </section>
+
+      <section class="poem-panel" aria-label="Poema de entrada">
+        <p class="section-label">Para ti</p>
+        <h2>Tres años guardando este cielo</h2>
+        <p>
+          Te prometí un mapa despacio,<br />
+          una ciudad nombrada en voz baja,<br />
+          y la paciencia de juntar los días<br />
+          hasta volverlos alas.
+        </p>
+        <p>
+          Tres años no fueron espera:<br />
+          fueron nuestras manos haciendo camino,<br />
+          cada sueño doblado en la maleta,<br />
+          cada plan diciendo: vamos a llegar.
+        </p>
+        <p>
+          Cuando el avión levante la noche,<br />
+          no se irá solo un vuelo de San Salvador;<br />
+          iremos nosotros, mi amor,<br />
+          con todo lo que fuimos cuidando para este momento.
+        </p>
+      </section>
+
+      <section class="progress-panel" aria-label="Progreso de la espera">
+        <div class="panel-head">
+          <div>
+            <p class="section-label">La espera</p>
+            <h2>3 años planeando</h2>
+          </div>
+          <strong id="progressText">--%</strong>
+        </div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+        <p id="sinceText" class="muted">Calculando el camino recorrido...</p>
+      </section>
+
+      <section class="timeline" aria-label="Itinerario de vuelos">
+        <p class="section-label">Itinerario</p>
+        <h2>El camino de ida y vuelta</h2>
+        <div class="flight-list">
+          <article class="flight-card">
+            <span>IB0222 - Mar 7 Jul</span>
+            <div><strong>SAL</strong><em>7:25 PM</em><b></b><strong>MAD</strong><em>2:10 PM +1</em></div>
+          </article>
+          <article class="flight-card">
+            <span>IB0723 - Mié 8 Jul</span>
+            <div><strong>MAD</strong><em>4:50 PM</em><b></b><strong>LHR</strong><em>6:15 PM</em></div>
+          </article>
+          <article class="flight-card return">
+            <span>IB0648 - Lun 20 Jul</span>
+            <div><strong>FCO</strong><em>12:00 PM</em><b></b><strong>MAD</strong><em>2:35 PM</em></div>
+          </article>
+          <article class="flight-card return">
+            <span>IB0257 - Lun 20 Jul</span>
+            <div><strong>MAD</strong><em>4:35 PM</em><b></b><strong>PTY</strong><em>8:15 PM</em></div>
+          </article>
+          <article class="flight-card return">
+            <span>IB7742 - Lun 20 Jul</span>
+            <div><strong>PTY</strong><em>10:28 PM</em><b></b><strong>SAL</strong><em>11:37 PM</em></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="actions" aria-label="Acciones">
+        <button id="shareButton" type="button">Compartir</button>
+        <p>En iPhone: abrir en Safari, tocar Compartir y elegir "Agregar a pantalla de inicio".</p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
