@@ -31,12 +31,13 @@ button { font: inherit; }
 .kicker, .section-label { margin: 0; text-transform: uppercase; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; }
 .kicker { color: rgba(255, 255, 255, 0.76); }
 .countdown { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; width: 100%; margin: 18px auto 20px; }
+.countdown[hidden] { display: none; }
 .countdown article { min-width: 0; overflow: hidden; border: 1px solid rgba(255,255,255,0.28); border-radius: 8px; padding: 11px 4px; background: rgba(12, 38, 43, 0.42); backdrop-filter: blur(12px); }
 .countdown strong { display: block; font-size: clamp(1.58rem, 9.5vw, 3.8rem); line-height: 0.92; font-variant-numeric: tabular-nums; }
 .countdown span { display: block; margin-top: 7px; color: rgba(255,255,255,0.74); font-size: 0.74rem; font-weight: 800; text-transform: uppercase; }
 h1 { margin: 0; font-size: clamp(2.2rem, 11vw, 5rem); line-height: 0.94; text-wrap: balance; }
 .date-line { margin: 14px 0 0; color: rgba(255, 255, 255, 0.82); font-weight: 700; }
-.poem-panel, .progress-panel, .timeline, .actions { margin: 14px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255, 250, 241, 0.92); box-shadow: var(--shadow); padding: 20px; }
+.poem-panel, .progress-panel, .timeline, .itinerary, .hotels, .info-panel, .actions { margin: 14px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255, 250, 241, 0.92); box-shadow: var(--shadow); padding: 20px; }
 .section-label { color: var(--coral); }
 h2 { margin: 6px 0 14px; font-size: 1.45rem; line-height: 1.1; }
 .poem-panel p:not(.section-label) { margin: 0 0 16px; font-family: Georgia, "Times New Roman", serif; font-size: 1.12rem; line-height: 1.7; }
@@ -56,5 +57,29 @@ h2 { margin: 6px 0 14px; font-size: 1.45rem; line-height: 1.1; }
 .actions { display: grid; gap: 10px; text-align: center; }
 .actions button { min-height: 46px; border: 0; border-radius: 8px; background: var(--teal); color: white; font-weight: 900; }
 .actions p { margin: 0; color: var(--muted); font-size: 0.92rem; font-weight: 700; }
+.departed { margin: 4px auto 0; max-width: 300px; font-weight: 800; font-size: 1.05rem; line-height: 1.4; color: white; text-shadow: 0 2px 12px rgba(6, 28, 32, 0.6); }
+.trip-ref { margin: -6px 0 16px; font-size: 0.9rem; }
+
+.day-list { display: grid; gap: 10px; }
+.day-card { position: relative; border: 1px solid var(--line); border-radius: 8px; background: white; padding: 14px 14px 14px 44px; }
+.day-card::before { content: attr(data-day); position: absolute; left: 10px; top: 14px; width: 26px; height: 26px; border-radius: 999px; background: var(--teal); color: white; font-size: 0.82rem; font-weight: 900; display: grid; place-items: center; }
+.day-card.free::before { background: var(--gold); color: var(--ink); }
+.day-card .day-date { color: var(--coral); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+.day-card .day-title { display: block; margin: 3px 0 6px; font-size: 1.05rem; font-weight: 800; line-height: 1.2; }
+.day-card .day-text { margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.5; font-weight: 600; }
+
+.hotel-list { display: grid; gap: 10px; }
+.hotel-card { border: 1px solid var(--line); border-radius: 8px; background: white; padding: 14px; }
+.hotel-card .hotel-city { color: var(--coral); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+.hotel-card .hotel-name { display: block; margin: 3px 0 4px; font-size: 1.02rem; font-weight: 800; }
+.hotel-card p { margin: 0; color: var(--muted); font-size: 0.88rem; line-height: 1.45; font-weight: 600; }
+.hotel-card a { color: var(--teal); font-weight: 800; }
+
+.info-list { display: grid; gap: 8px; }
+.info-row { display: grid; gap: 2px; border: 1px solid var(--line); border-radius: 8px; background: white; padding: 12px 14px; }
+.info-row .info-label { color: var(--muted); font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; }
+.info-row .info-value { color: var(--ink); font-size: 0.98rem; font-weight: 800; word-break: break-word; }
+.info-row a { color: var(--teal); }
+
 @media (max-width: 480px) { .countdown { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 310px; } .countdown strong { font-size: clamp(2rem, 13vw, 3.4rem); } }
 @media (min-width: 760px) { .app-shell { padding: 20px 0 40px; } .hero { border-radius: 16px; min-height: 920px; } }

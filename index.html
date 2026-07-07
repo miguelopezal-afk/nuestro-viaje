@@ -19,13 +19,14 @@
         <img class="hero-image" src="assets/viaje-hero.png" alt="Mesa de viaje junto a una ventana de aeropuerto al amanecer" />
         <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="kicker">Nuestro viaje empieza en</p>
-          <div class="countdown" aria-live="polite">
+          <p class="kicker" id="kicker">Nuestro viaje empieza en</p>
+          <div class="countdown" id="countdown">
             <article><strong id="days">--</strong><span>Días</span></article>
             <article><strong id="hours">--</strong><span>Horas</span></article>
             <article><strong id="minutes">--</strong><span>Min</span></article>
             <article><strong id="seconds">--</strong><span>Seg</span></article>
           </div>
+          <p class="departed" id="departedNote" hidden>✈️ ¡Ya estamos en el aire, mi amor! El viaje de nuestras vidas empezó.</p>
           <h1>San Salvador a Europa</h1>
           <p class="date-line">Martes 7 de julio de 2026 - 7:25 PM</p>
         </div>
@@ -91,6 +92,25 @@
             <div><strong>PTY</strong><em>10:28 PM</em><b></b><strong>SAL</strong><em>11:37 PM</em></div>
           </article>
         </div>
+      </section>
+
+      <section class="itinerary" aria-label="Itinerario dia a dia">
+        <p class="section-label">Dia a dia</p>
+        <h2>Europa para dos, paso a paso</h2>
+        <p class="muted trip-ref">La Bella Europa &middot; 7 al 20 de julio &middot; Localizador 6224531</p>
+        <div id="dayList" class="day-list"></div>
+      </section>
+
+      <section class="hotels" aria-label="Hoteles">
+        <p class="section-label">Donde dormimos</p>
+        <h2>Nuestros hoteles</h2>
+        <div id="hotelList" class="hotel-list"></div>
+      </section>
+
+      <section class="info-panel" aria-label="Datos utiles">
+        <p class="section-label">Para tener a mano</p>
+        <h2>Datos utiles</h2>
+        <div id="infoList" class="info-list"></div>
       </section>
 
       <section class="actions" aria-label="Acciones">
