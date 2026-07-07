@@ -126,3 +126,9 @@ shareButton.addEventListener('click', async () => {
 renderTrip();
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  });
+}
