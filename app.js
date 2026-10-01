@@ -133,7 +133,7 @@ const recs = [
 ];
 
 const info = [
-  { label: 'Viajeros', value: 'Miguel, Krystel, Santiago y José Joaquín · Christofer y Fabián se adelantan a Londres el 21 de diciembre; el regreso de Christofer está pendiente de cambio' },
+  { label: 'Viajeros', value: '6 en total, 4 adultos y 2 niños. Adultos: Miguel, Krystel, Christofer y Fabián. Niños: Santiago y José Joaquín. Christofer y Fabián se adelantan a Londres el 21 de diciembre.' },
   { label: 'Check-in', value: 'En línea en iberia.com, se abre 24 h antes de cada vuelo', href: 'https://www.iberia.com' },
   { label: 'Equipaje', value: 'Ida 25 dic: sin maleta facturada (0PC). Vuelta 7 ene: 1 maleta facturada por persona (1PC)' },
   { label: 'Pendiente', value: 'Cambiar el vuelo de regreso de Christofer (1 ene), hoteles, detalles del vuelo París CDG → Praga (31 dic en la mañana) y viaje Praga → España' },
