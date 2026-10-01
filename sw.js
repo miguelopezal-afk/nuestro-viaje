@@ -1,4 +1,4 @@
-const CACHE = 'nuestro-viaje-v33';
+const CACHE = 'nuestro-viaje-v34';
 const CORE = [
   './',
   './index.html',
@@ -17,7 +17,10 @@ const CORE = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE).then((cache) => cache.addAll(CORE)).then(() => self.skipWaiting())
+    caches.open(CACHE)
+      // 'reload' salta la cache HTTP del navegador para guardar siempre la version mas nueva.
+      .then((cache) => cache.addAll(CORE.map((url) => new Request(url, { cache: 'reload' }))))
+      .then(() => self.skipWaiting())
   );
 });
 
@@ -35,19 +38,27 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  const isImage = /\.(png|jpg|jpeg|webp)$/i.test(new URL(request.url).pathname);
+
   event.respondWith(
-    caches.open(CACHE).then((cache) =>
-      cache.match(request).then((cached) => {
-        const network = fetch(request)
-          .then((response) => {
-            if (response && response.ok) {
-              cache.put(request, response.clone());
-            }
-            return response;
-          })
-          .catch(() => cached || (request.mode === 'navigate' ? cache.match('./index.html') : undefined));
-        return cached || network;
-      })
-    )
+    caches.open(CACHE).then(async (cache) => {
+      // Imagenes: primero la copia guardada (no cambian seguido).
+      if (isImage) {
+        const cached = await cache.match(request);
+        if (cached) return cached;
+      }
+
+      // Todo lo demas: primero internet, y si no hay senal, la copia guardada.
+      try {
+        const response = await fetch(request, { cache: 'no-cache' });
+        if (response && response.ok) cache.put(request, response.clone());
+        return response;
+      } catch (err) {
+        const cached = await cache.match(request);
+        if (cached) return cached;
+        if (request.mode === 'navigate') return cache.match('./index.html');
+        throw err;
+      }
+    })
   );
 });
