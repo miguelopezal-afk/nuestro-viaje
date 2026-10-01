@@ -70,6 +70,7 @@ const stays = [
 
 const recs = [
   {
+    photo: 'assets/foto-londres.jpg',
     place: 'Londres', who: 'Christofer y Fabián · 22 al 26 dic',
     items: [
       '<b>Westminster:</b> Big Ben, el Parlamento y la Abadía de Westminster; cruzar el puente para ver el London Eye y, si quieren, subirse.',
@@ -89,6 +90,7 @@ const recs = [
     tip: 'El 25 de diciembre no hay metro, trenes ni autobuses en Londres y casi todo cierra, incluidos museos y restaurantes: reserven la cena de Navidad con tiempo y planeen ese día caminando cerca del hotel. El 26 (Boxing Day) hay transporte limitado y es día de rebajas en las tiendas. Compren una tarjeta Oyster o paguen con tarjeta sin contacto en el metro.'
   },
   {
+    photo: 'assets/foto-disney.jpg',
     place: 'Disneyland Paris', who: 'Todos · 26 al 29 dic',
     items: [
       '<b>Fantasyland (lo mejor para los niños):</b> Peter Pan’s Flight, Dumbo, It’s a Small World, el Carrusel de Lancelot y el laberinto de Alicia.',
@@ -121,6 +123,7 @@ const recs = [
     tip: 'El metro es la forma más rápida de moverse; compren boletos en las máquinas o usen la app de RATP. Cuidado con los carteristas en el metro, en la Torre Eiffel y en Montmartre. Muchos museos son gratis para menores de 18.'
   },
   {
+    photo: 'assets/foto-praga.jpg',
     place: 'Praga', who: 'Todos · 31 dic al 3 ene',
     items: [
       '<b>Plaza de la Ciudad Vieja:</b> el Reloj Astronómico (show cada hora en punto), la iglesia de Týn y el mercado de Navidad con su árbol gigante.',
@@ -137,6 +140,7 @@ const recs = [
     tip: 'La moneda es la corona checa, no el euro: paguen con tarjeta o cambien en casas de cambio confiables, nunca en la calle. La noche del 31 el centro se llena y hay cohetes por todos lados; con los niños, mejor un mirador como Letná o Petřín. El 1 de enero muchos lugares abren tarde o cierran. Hace mucho frío: ropa térmica.'
   },
   {
+    photo: 'assets/foto-madrid.jpg',
     place: 'Madrid', who: 'Todos · 3 al 7 ene',
     items: [
       '<b>Cabalgata de Reyes (5 ene, en la tarde):</b> el gran desfile de los Reyes Magos por la Castellana y Cibeles, con carrozas y dulces para los niños. Lleguen temprano.',
@@ -187,7 +191,7 @@ function renderTrip() {
   if (recList) {
     recList.innerHTML = recs.map((r) => `
       <article class="rec-card">
-        ${r.photo ? `<img class="rec-photo" src="${r.photo}" alt="${r.place}" loading="lazy" />` : ''}
+        ${r.photo ? `<img class="rec-photo" src="${r.photo}" alt="${r.place}" />` : ''}
         <span class="hotel-city">${r.who}</span>
         <span class="hotel-name">${r.place}</span>
         <ul>${r.items.map((it) => `<li>${it}</li>`).join('')}</ul>

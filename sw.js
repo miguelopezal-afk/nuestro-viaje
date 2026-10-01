@@ -1,4 +1,4 @@
-const CACHE = 'nuestro-viaje-v23';
+const CACHE = 'nuestro-viaje-v24';
 const CORE = [
   './',
   './index.html',
@@ -7,7 +7,11 @@ const CORE = [
   './manifest.json',
   './assets/viaje-hero.png',
   './assets/icon-192.png',
-  './assets/icon-512.png'
+  './assets/icon-512.png',
+  './assets/foto-londres.jpg',
+  './assets/foto-disney.jpg',
+  './assets/foto-praga.jpg',
+  './assets/foto-madrid.jpg'
 ];
 
 self.addEventListener('install', (event) => {
