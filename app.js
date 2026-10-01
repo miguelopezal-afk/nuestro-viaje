@@ -187,6 +187,7 @@ function renderTrip() {
   if (recList) {
     recList.innerHTML = recs.map((r) => `
       <article class="rec-card">
+        ${r.photo ? `<img class="rec-photo" src="${r.photo}" alt="${r.place}" loading="lazy" />` : ''}
         <span class="hotel-city">${r.who}</span>
         <span class="hotel-name">${r.place}</span>
         <ul>${r.items.map((it) => `<li>${it}</li>`).join('')}</ul>
