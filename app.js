@@ -1,11 +1,7 @@
 const tripStart = new Date('2026-12-21T18:15:00-06:00');
-const planningStart = new Date('2026-09-22T12:00:00-06:00');
 
 const ids = ['days', 'hours', 'minutes', 'seconds'];
 const nodes = Object.fromEntries(ids.map((id) => [id, document.getElementById(id)]));
-const progressBar = document.getElementById('progressBar');
-const progressText = document.getElementById('progressText');
-const sinceText = document.getElementById('sinceText');
 const shareButton = document.getElementById('shareButton');
 const kicker = document.getElementById('kicker');
 const countdownEl = document.getElementById('countdown');
@@ -28,15 +24,6 @@ function updateCountdown() {
   nodes.hours.textContent = pad(hours);
   nodes.minutes.textContent = pad(minutes);
   nodes.seconds.textContent = pad(seconds);
-
-  const fullWait = tripStart - planningStart;
-  const traveled = Math.min(Math.max(now - planningStart, 0), fullWait);
-  const progress = fullWait > 0 ? (traveled / fullWait) * 100 : 100;
-  progressBar.style.width = `${progress.toFixed(2)}%`;
-  const passedDays = Math.floor(traveled / 86400000);
-  const leftDays = Math.floor(distance / 86400000);
-  progressText.textContent = `${Math.round(progress)}%`;
-  sinceText.textContent = `Compramos los boletos el 22 de septiembre. Ya pasaron ${passedDays} días y faltan ${leftDays} para el 21 de diciembre, cuando empieza el viaje.`;
 
   if (distance <= 0) {
     countdownEl.hidden = true;
