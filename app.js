@@ -71,7 +71,7 @@ const stays = [
 const info = [
   { label: 'Viajeros', value: 'Miguel, Krystel, Santiago y José Joaquín · Christofer y Fabián se adelantan a Londres el 21 de diciembre' },
   { label: 'Check-in', value: 'En línea en iberia.com, se abre 24 h antes de cada vuelo', href: 'https://www.iberia.com' },
-  { label: 'Equipaje', value: 'Ida: tarifa sin maleta facturada (0PC). Vuelta 7 ene: revisar la franquicia en cada boleto' },
+  { label: 'Equipaje', value: 'Ida 25 dic: sin maleta facturada (0PC). Vuelta 7 ene: 1 maleta facturada por persona (1PC)' },
   { label: 'Pendiente', value: 'Hoteles, viaje París → Praga (31 dic), Praga → España y boletos de Christofer' },
   { label: 'Agencia', value: 'Town Tkt Office · Av. La Reforma 8-60 zona 9, Edificio Galerías Reforma · Tel. 2202-4949', href: 'tel:+50222024949' }
 ];

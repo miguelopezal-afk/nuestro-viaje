@@ -1,4 +1,4 @@
-const CACHE = 'nuestro-viaje-v3';
+const CACHE = 'nuestro-viaje-v4';
 const CORE = [
   './',
   './index.html',
