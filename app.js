@@ -68,6 +68,70 @@ const stays = [
   { city: 'España', dates: '4 al 7 ene', nights: 'Regreso desde Madrid' }
 ];
 
+const recs = [
+  {
+    place: 'Londres', who: 'Christofer y Fabián · 22 al 26 dic',
+    items: [
+      'Westminster: Big Ben, el Parlamento y la Abadía, y cruzar el puente para ver el London Eye.',
+      'Torre de Londres (las Joyas de la Corona) y caminar por el Tower Bridge.',
+      'Cambio de guardia en el Palacio de Buckingham y paseo por St James’s Park.',
+      'Luces de Navidad en Regent Street, Oxford Street y Covent Garden.',
+      'Hyde Park Winter Wonderland: feria navideña con juegos y comida.',
+      'British Museum (entrada gratis) y un fish & chips en un pub.'
+    ],
+    tip: 'El 25 de diciembre no hay metro ni casi transporte en Londres y casi todo cierra; el 26 el servicio es limitado. Planeen ese día caminando cerca del hotel.'
+  },
+  {
+    place: 'Disneyland Paris', who: 'Todos · 26 al 29 dic',
+    items: [
+      'Disneyland Park: el Castillo de la Bella Durmiente, Big Thunder Mountain, Piratas del Caribe y Peter Pan’s Flight.',
+      'El segundo parque (Walt Disney Studios): Ratatouille, Avengers y la zona de Frozen si ya está abierta.',
+      'El desfile de Navidad y el espectáculo nocturno con fuegos artificiales frente al castillo.',
+      'Una comida con personajes para los niños (hay que reservar con anticipación).',
+      'Disney Village en la noche para cenar y ver tiendas.'
+    ],
+    tip: 'Son fechas de mucha gente: lleguen a la apertura, usen la app de Disneyland Paris para ver tiempos de espera y consideren Premier Access para las atracciones más populares.'
+  },
+  {
+    place: 'París', who: 'Todos · 29 al 31 dic',
+    items: [
+      'Torre Eiffel: subir con boletos comprados en línea y ver el centelleo de luces cada hora en la noche desde Trocadero.',
+      'Paseo en barco por el Sena.',
+      'Catedral de Notre-Dame, ya reabierta, y la Sainte-Chapelle.',
+      'Campos Elíseos con luces navideñas hasta el Arco del Triunfo.',
+      'Montmartre y el Sacré-Cœur, con vista a toda la ciudad.',
+      'El árbol de Navidad gigante de las Galerías Lafayette (y su terraza con vista).',
+      'Un crepe en la calle y un chocolate caliente en Angelina.'
+    ],
+    tip: 'El Louvre cierra los martes: el 29 de diciembre es martes, así que si quieren ir, que sea el 30. Compren entradas con horario en línea.'
+  },
+  {
+    place: 'Praga', who: 'Todos · 31 dic al 3 ene',
+    items: [
+      'Plaza de la Ciudad Vieja y el Reloj Astronómico, que hace su espectáculo cada hora en punto.',
+      'Mercados de Navidad de la Ciudad Vieja y de la Plaza de Wenceslao (suelen seguir abiertos hasta el 6 de enero).',
+      'Puente de Carlos temprano en la mañana, antes de que se llene.',
+      'Castillo de Praga, la Catedral de San Vito y el Callejón del Oro.',
+      'Barrio de Malá Strana y subir al mirador de Petřín en funicular.',
+      'Probar el trdelník (pan dulce en espiral) y un goulash checo.'
+    ],
+    tip: 'La noche del 31 el centro se llena muchísimo y hay cohetes por todos lados. Con los niños es mejor ver los fuegos desde un mirador como Letná o Petřín. El 1 de enero muchos lugares abren tarde o cierran.'
+  },
+  {
+    place: 'Madrid', who: 'Todos · 4 al 7 ene',
+    items: [
+      'Cabalgata de Reyes la tarde del 5 de enero: el gran desfile de los Reyes Magos por el centro. Lleguen temprano para buscar lugar.',
+      'Roscón de Reyes el 6 de enero, como lo celebran los españoles.',
+      'Parque del Retiro: el lago con botes y el Palacio de Cristal.',
+      'Palacio Real, Plaza Mayor y Puerta del Sol con el oso y el madroño.',
+      'Chocolate con churros en San Ginés.',
+      'Tour del estadio Santiago Bernabéu, ideal para los niños.',
+      'Museo del Prado (con los niños, una visita corta a las obras principales).'
+    ],
+    tip: 'El 6 de enero es feriado y muchas tiendas cierran. El 7 el vuelo sale a las 11:50 de la T4S: salgan al aeropuerto con tiempo, lleguen unas 3 horas antes.'
+  }
+];
+
 const info = [
   { label: 'Viajeros', value: 'Miguel, Krystel, Santiago y José Joaquín · Christofer y Fabián se adelantan a Londres el 21 de diciembre; el regreso de Christofer está pendiente de cambio' },
   { label: 'Check-in', value: 'En línea en iberia.com, se abre 24 h antes de cada vuelo', href: 'https://www.iberia.com' },
@@ -94,6 +158,17 @@ function renderTrip() {
       <span class="day-title">${d.title}</span>
       <p class="day-text">${d.text}</p>
     </article>`).join('');
+
+  const recList = document.getElementById('recList');
+  if (recList) {
+    recList.innerHTML = recs.map((r) => `
+      <article class="rec-card">
+        <span class="hotel-city">${r.who}</span>
+        <span class="hotel-name">${r.place}</span>
+        <ul>${r.items.map((it) => `<li>${it}</li>`).join('')}</ul>
+        <p class="rec-tip"><b>Ojo:</b> ${r.tip}</p>
+      </article>`).join('');
+  }
 
   infoList.innerHTML = info.map((i) => `
     <div class="info-row">
