@@ -54,18 +54,18 @@ const itinerary = [
   { day: 7, date: 'Jue 31 dic · París → Praga', title: 'Fin de año en Praga', text: 'Vuelo por la mañana de París a Praga. Recibimos el 2027 allá.' },
   { day: 8, date: 'Vie 1 ene · Praga', title: '¡Feliz Año Nuevo!', text: 'Primer día del año en Praga. El regreso de Christofer (1 ene) está pendiente de cambio.' },
   { day: 9, date: 'Sáb 2 ene · Praga', title: 'Praga', text: 'Día en Praga.' },
-  { day: 10, date: 'Dom 3 ene · Praga', title: 'Último día en Praga', text: 'Último día completo en Praga.' },
-  { day: 11, date: 'Lun 4 ene · Praga → Madrid', title: 'Llegamos a Madrid', text: 'Vuelo de Praga a Madrid.' },
-  { day: 12, date: 'Mar 5 ene · España', title: 'España', text: 'Día en España.' },
-  { day: 13, date: 'Mié 6 ene · España', title: 'Día de Reyes', text: 'Día de Reyes en España.' },
+  { day: 10, date: 'Dom 3 ene · Praga → Madrid', title: 'Último día en Praga', text: 'Mañana en Praga y vuelo en la tarde a Madrid.' },
+  { day: 11, date: 'Lun 4 ene · Madrid', title: 'Madrid', text: 'Primer día completo en Madrid.' },
+  { day: 12, date: 'Mar 5 ene · Madrid', title: 'Cabalgata de Reyes', text: 'Día en Madrid y, por la tarde, la Cabalgata de Reyes.' },
+  { day: 13, date: 'Mié 6 ene · Madrid', title: 'Día de Reyes', text: 'Día de Reyes en Madrid, con roscón. Es feriado y muchas tiendas cierran.' },
   { day: 14, date: 'Jue 7 ene · Madrid → Guatemala', title: 'De vuelta a casa', text: 'Regresamos todos desde Madrid: vuelo IB221 desde la T4S a las 11:50, directo a Guatemala. Llegada a las 16:45.' }
 ];
 
 const stays = [
   { city: 'Disneyland Paris', dates: '26 al 29 dic', nights: '3 noches' },
   { city: 'Centro de París', dates: '29 al 31 dic', nights: '2 noches' },
-  { city: 'Praga', dates: '31 dic al 4 ene', nights: '4 noches · Año Nuevo' },
-  { city: 'España', dates: '4 al 7 ene', nights: 'Regreso desde Madrid' }
+  { city: 'Praga', dates: '31 dic al 3 ene', nights: '3 noches · Año Nuevo' },
+  { city: 'Madrid', dates: '3 al 7 ene', nights: '4 noches · regreso a casa' }
 ];
 
 const recs = [
@@ -106,7 +106,7 @@ const recs = [
     tip: 'El Louvre cierra los martes: el 29 de diciembre es martes, así que si quieren ir, que sea el 30. Compren entradas con horario en línea.'
   },
   {
-    place: 'Praga', who: 'Todos · 31 dic al 4 ene',
+    place: 'Praga', who: 'Todos · 31 dic al 3 ene',
     items: [
       'Plaza de la Ciudad Vieja y el Reloj Astronómico, que hace su espectáculo cada hora en punto.',
       'Mercados de Navidad de la Ciudad Vieja y de la Plaza de Wenceslao (suelen seguir abiertos hasta el 6 de enero).',
@@ -118,7 +118,7 @@ const recs = [
     tip: 'La noche del 31 el centro se llena muchísimo y hay cohetes por todos lados. Con los niños es mejor ver los fuegos desde un mirador como Letná o Petřín. El 1 de enero muchos lugares abren tarde o cierran.'
   },
   {
-    place: 'Madrid', who: 'Todos · 4 al 7 ene',
+    place: 'Madrid', who: 'Todos · 3 al 7 ene',
     items: [
       'Cabalgata de Reyes la tarde del 5 de enero: el gran desfile de los Reyes Magos por el centro. Lleguen temprano para buscar lugar.',
       'Roscón de Reyes el 6 de enero, como lo celebran los españoles.',
@@ -136,7 +136,7 @@ const info = [
   { label: 'Viajeros', value: '6 en total, 4 adultos y 2 niños. Adultos: Miguel, Krystel, Christofer y Fabián. Niños: Santiago y José Joaquín. Christofer y Fabián se adelantan a Londres el 21 de diciembre.' },
   { label: 'Check-in', value: 'En línea en iberia.com, se abre 24 h antes de cada vuelo', href: 'https://www.iberia.com' },
   { label: 'Equipaje', value: 'Ida 25 dic: sin maleta facturada (0PC). Vuelta 7 ene: 1 maleta facturada por persona (1PC)' },
-  { label: 'Pendiente', value: 'Cambiar el vuelo de regreso de Christofer (1 ene), hoteles, detalles del vuelo París CDG → Praga (31 dic en la mañana) y vuelo Praga → Madrid (4 ene)' },
+  { label: 'Pendiente', value: 'Cambiar el vuelo de regreso de Christofer (1 ene), hoteles, detalles del vuelo París CDG → Praga (31 dic en la mañana) y vuelo Praga → Madrid (3 ene en la tarde)' },
   { label: 'Agencia', value: 'Town Tkt Office · Av. La Reforma 8-60 zona 9, Edificio Galerías Reforma · Tel. 2202-4949', href: 'tel:+50222024949' }
 ];
 
