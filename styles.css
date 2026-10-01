@@ -37,7 +37,7 @@ button { font: inherit; }
 .countdown span { display: block; margin-top: 7px; color: rgba(255,255,255,0.74); font-size: 0.74rem; font-weight: 800; text-transform: uppercase; }
 h1 { margin: 0; font-size: clamp(2.2rem, 11vw, 5rem); line-height: 0.94; text-wrap: balance; }
 .date-line { margin: 14px 0 0; color: rgba(255, 255, 255, 0.82); font-weight: 700; }
-.poem-panel, .progress-panel, .timeline, .itinerary, .hotels, .info-panel, .actions { margin: 14px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255, 250, 241, 0.92); box-shadow: var(--shadow); padding: 20px; }
+.progress-panel, .timeline, .itinerary, .hotels, .info-panel, .actions { margin: 14px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255, 250, 241, 0.92); box-shadow: var(--shadow); padding: 20px; }
 .section-label { color: var(--coral); }
 h2 { margin: 6px 0 14px; font-size: 1.45rem; line-height: 1.1; }
 .poem-panel p:not(.section-label) { margin: 0 0 16px; font-family: Georgia, "Times New Roman", serif; font-size: 1.12rem; line-height: 1.7; }
