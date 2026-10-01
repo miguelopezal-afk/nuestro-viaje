@@ -58,7 +58,7 @@ const itinerary = [
   { day: 11, date: 'Lun 4 ene · España', title: 'Llegamos a España', text: 'Inicio de los días en España.' },
   { day: 12, date: 'Mar 5 ene · España', title: 'España', text: 'Día en España.' },
   { day: 13, date: 'Mié 6 ene · España', title: 'Día de Reyes', text: 'Día de Reyes en España.' },
-  { day: 14, date: 'Jue 7 ene · Madrid → Guatemala', title: 'De vuelta a casa', text: 'Vuelo IB221 desde Madrid T4S a las 11:50, directo a Guatemala. Llegada a las 16:45. Fabián regresa en el mismo vuelo.' }
+  { day: 14, date: 'Jue 7 ene · Madrid → Guatemala', title: 'De vuelta a casa', text: 'Regresamos todos desde Madrid: vuelo IB221 desde la T4S a las 11:50, directo a Guatemala. Llegada a las 16:45.' }
 ];
 
 const stays = [
