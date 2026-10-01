@@ -85,3 +85,4 @@ h2 { margin: 6px 0 14px; font-size: 1.45rem; line-height: 1.1; }
 .flight-card.pending { border-color: var(--gold); border-style: dashed; }
 .flight-card.pending div { opacity: 0.55; text-decoration: line-through; }
 .flight-badge { margin: 8px 0 0; display: inline-block; padding: 4px 8px; border-radius: 6px; background: var(--gold); color: var(--ink); font-size: 0.78rem; font-weight: 800; }
+.flight-card.pending.tobuy div { opacity: 0.6; text-decoration: none; }
