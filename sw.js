@@ -1,11 +1,11 @@
-const CACHE = 'nuestro-viaje-v24';
+const CACHE = 'nuestro-viaje-v25';
 const CORE = [
   './',
   './index.html',
   './styles.css',
   './app.js',
   './manifest.json',
-  './assets/viaje-hero.png',
+  './assets/portada-familia.jpg',
   './assets/icon-192.png',
   './assets/icon-512.png',
   './assets/foto-londres.jpg',

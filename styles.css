@@ -25,7 +25,7 @@ body {
 button { font: inherit; }
 .app-shell { width: min(720px, 100%); margin: 0 auto; padding-bottom: max(28px, env(safe-area-inset-bottom)); }
 .hero { position: relative; min-height: 100svh; overflow: hidden; display: grid; align-items: start; }
-.hero-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 100%; }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(6, 28, 32, 0.68) 0%, rgba(6, 28, 32, 0.22) 42%, rgba(247, 239, 227, 0.98) 96%); }
 .hero-content { position: relative; z-index: 1; padding: max(58px, env(safe-area-inset-top) + 28px) 18px 24px; color: white; text-align: center; }
 .kicker, .section-label { margin: 0; text-transform: uppercase; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; }
@@ -80,7 +80,7 @@ h2 { margin: 6px 0 14px; font-size: 1.45rem; line-height: 1.1; }
 .info-row .info-value { color: var(--ink); font-size: 0.98rem; font-weight: 800; word-break: break-word; }
 .info-row a { color: var(--teal); }
 
-@media (max-width: 480px) { .countdown { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 310px; } .countdown strong { font-size: clamp(2rem, 13vw, 3.4rem); } }
+@media (max-width: 480px) { .countdown { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 340px; gap: 5px; margin: 14px auto 16px; } .countdown strong { font-size: clamp(1.6rem, 9vw, 2.4rem); } .hero h1 { font-size: 2rem; } }
 @media (min-width: 760px) { .app-shell { padding: 20px 0 40px; } .hero { border-radius: 16px; min-height: 920px; } }
 .flight-card.pending { border-color: var(--gold); border-style: dashed; }
 .flight-card.pending div { opacity: 0.55; text-decoration: line-through; }
