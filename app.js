@@ -33,8 +33,10 @@ function updateCountdown() {
   const traveled = Math.min(Math.max(now - planningStart, 0), fullWait);
   const progress = fullWait > 0 ? (traveled / fullWait) * 100 : 100;
   progressBar.style.width = `${progress.toFixed(2)}%`;
+  const passedDays = Math.floor(traveled / 86400000);
+  const leftDays = Math.floor(distance / 86400000);
   progressText.textContent = `${Math.round(progress)}%`;
-  sinceText.textContent = `Desde el 22 de septiembre de 2026, cuando compramos los boletos: ${Math.floor(traveled / 86400000).toLocaleString('es-GT')} días de espera.`;
+  sinceText.textContent = `Compramos los boletos el 22 de septiembre. Ya pasaron ${passedDays} días y faltan ${leftDays} para el 21 de diciembre, cuando empieza el viaje.`;
 
   if (distance <= 0) {
     countdownEl.hidden = true;
