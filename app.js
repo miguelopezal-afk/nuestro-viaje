@@ -107,6 +107,7 @@ const recs = [
     tip: 'Son de las fechas más llenas del año: lleguen a la apertura y hagan primero lo más popular, usen la app de Disneyland Paris para ver tiempos de espera y reservar comidas, y consideren Premier Access para Peter Pan, Ratatouille y Big Thunder. Hace frío: gorro, guantes y capas de ropa para los niños.'
   },
   {
+    photo: 'assets/foto-paris.jpg', tall: true,
     place: 'París', who: 'Todos · 29 al 31 dic',
     items: [
       '<b>Torre Eiffel:</b> subir con boletos comprados en línea (se agotan); en la noche ver el centelleo de luces cada hora en punto desde Trocadero.',
@@ -191,7 +192,7 @@ function renderTrip() {
   if (recList) {
     recList.innerHTML = recs.map((r) => `
       <article class="rec-card">
-        ${r.photo ? `<img class="rec-photo" src="${r.photo}" alt="${r.place}" />` : ''}
+        ${r.photo ? `<img class="rec-photo${r.tall ? ' tall' : ''}" src="${r.photo}" alt="${r.place}" />` : ''}
         <span class="hotel-city">${r.who}</span>
         <span class="hotel-name">${r.place}</span>
         <ul>${r.items.map((it) => `<li>${it}</li>`).join('')}</ul>

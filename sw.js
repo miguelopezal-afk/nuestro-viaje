@@ -1,4 +1,4 @@
-const CACHE = 'nuestro-viaje-v25';
+const CACHE = 'nuestro-viaje-v26';
 const CORE = [
   './',
   './index.html',
@@ -11,6 +11,7 @@ const CORE = [
   './assets/foto-londres.jpg',
   './assets/foto-disney.jpg',
   './assets/foto-praga.jpg',
+  './assets/foto-paris.jpg',
   './assets/foto-madrid.jpg'
 ];
 
