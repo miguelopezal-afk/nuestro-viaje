@@ -82,3 +82,6 @@ h2 { margin: 6px 0 14px; font-size: 1.45rem; line-height: 1.1; }
 
 @media (max-width: 480px) { .countdown { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 310px; } .countdown strong { font-size: clamp(2rem, 13vw, 3.4rem); } }
 @media (min-width: 760px) { .app-shell { padding: 20px 0 40px; } .hero { border-radius: 16px; min-height: 920px; } }
+.flight-card.pending { border-color: var(--gold); border-style: dashed; }
+.flight-card.pending div { opacity: 0.55; text-decoration: line-through; }
+.flight-badge { margin: 8px 0 0; display: inline-block; padding: 4px 8px; border-radius: 6px; background: var(--gold); color: var(--ink); font-size: 0.78rem; font-weight: 800; }
