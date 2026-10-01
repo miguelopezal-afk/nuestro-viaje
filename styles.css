@@ -95,3 +95,4 @@ h2 { margin: 6px 0 14px; font-size: 1.45rem; line-height: 1.1; }
 .day-plan { margin: 8px 0 0; padding-left: 18px; color: var(--ink); font-size: 0.9rem; line-height: 1.5; font-weight: 600; }
 .day-plan li { margin-bottom: 3px; }
 .rec-photo { display: block; width: calc(100% + 28px); margin: -14px -14px 12px; aspect-ratio: 16 / 10; object-fit: cover; object-position: center 30%; border-radius: 8px 8px 0 0; }
+.date-sub { margin: 4px 0 0; font-size: 0.82rem; font-weight: 700; color: rgba(255, 255, 255, 0.78); }

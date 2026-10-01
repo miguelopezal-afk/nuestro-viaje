@@ -1,4 +1,4 @@
-const tripStart = new Date('2026-12-25T18:15:00-06:00');
+const tripStart = new Date('2026-12-21T18:15:00-06:00');
 const planningStart = new Date('2026-09-22T12:00:00-06:00');
 
 const ids = ['days', 'hours', 'minutes', 'seconds'];
