@@ -91,51 +91,67 @@ const recs = [
   {
     place: 'Disneyland Paris', who: 'Todos · 26 al 29 dic',
     items: [
-      'Disneyland Park: el Castillo de la Bella Durmiente, Big Thunder Mountain, Piratas del Caribe y Peter Pan’s Flight.',
-      'El segundo parque (Walt Disney Studios): Ratatouille, Avengers y la zona de Frozen si ya está abierta.',
-      'El desfile de Navidad y el espectáculo nocturno con fuegos artificiales frente al castillo.',
-      'Una comida con personajes para los niños (hay que reservar con anticipación).',
-      'Disney Village en la noche para cenar y ver tiendas.'
+      '<b>Fantasyland (lo mejor para los niños):</b> Peter Pan’s Flight, Dumbo, It’s a Small World, el Carrusel de Lancelot y el laberinto de Alicia.',
+      '<b>Castillo de la Bella Durmiente:</b> subir al castillo y bajar a la cueva del dragón que está debajo.',
+      '<b>Adventureland:</b> Piratas del Caribe, la isla de Peter Pan con la casa del árbol de los Robinson y Indiana Jones (para los más grandes).',
+      '<b>Frontierland:</b> Big Thunder Mountain, la mejor montaña rusa familiar, y la casa embrujada Phantom Manor.',
+      '<b>Discoveryland:</b> Buzz Lightyear Laser Blast (compiten por puntos), Star Wars Hyperspace Mountain y Autopia para que los niños manejen.',
+      '<b>Walt Disney Studios:</b> Ratatouille, Avengers Assemble: Flight Force, Spider-Man W.E.B. Adventure, Toy Story Playland y la zona de Frozen si ya está abierta.',
+      '<b>Shows:</b> el desfile de Navidad en Main Street en la tarde y los fuegos artificiales frente al castillo en la noche; buscar lugar 30–45 min antes.',
+      '<b>Personajes:</b> Meet Mickey Mouse en Fantasyland y las princesas en Princess Pavilion; ver horarios en la app.',
+      '<b>Comidas:</b> una comida con personajes (Auberge de Cendrillon o Plaza Gardens) reservada con anticipación; para algo rápido, Disney Village.',
+      '<b>Disney Village:</b> en la noche, cenar, ver tiendas y el lago.'
     ],
-    tip: 'Son fechas de mucha gente: lleguen a la apertura, usen la app de Disneyland Paris para ver tiempos de espera y consideren Premier Access para las atracciones más populares.'
+    tip: 'Son de las fechas más llenas del año: lleguen a la apertura y hagan primero lo más popular, usen la app de Disneyland Paris para ver tiempos de espera y reservar comidas, y consideren Premier Access para Peter Pan, Ratatouille y Big Thunder. Hace frío: gorro, guantes y capas de ropa para los niños.'
   },
   {
     place: 'París', who: 'Todos · 29 al 31 dic',
     items: [
-      'Torre Eiffel: subir con boletos comprados en línea y ver el centelleo de luces cada hora en la noche desde Trocadero.',
-      'Paseo en barco por el Sena.',
-      'Catedral de Notre-Dame, ya reabierta, y la Sainte-Chapelle.',
-      'Campos Elíseos con luces navideñas hasta el Arco del Triunfo.',
-      'Montmartre y el Sacré-Cœur, con vista a toda la ciudad.',
-      'El árbol de Navidad gigante de las Galerías Lafayette (y su terraza con vista).',
-      'Un crepe en la calle y un chocolate caliente en Angelina.'
+      '<b>Torre Eiffel:</b> subir con boletos comprados en línea (se agotan); en la noche ver el centelleo de luces cada hora en punto desde Trocadero.',
+      '<b>Louvre:</b> la Mona Lisa, la Venus de Milo y las antigüedades egipcias; entrada con horario reservada. Cierra los martes, así que el 30.',
+      '<b>Jardín de las Tullerías:</b> entre el Louvre y la Plaza de la Concordia; en diciembre suele haber feria con rueda de la fortuna.',
+      '<b>Île de la Cité:</b> Notre-Dame, ya reabierta (entrada gratis, mejor con reserva), y los vitrales de la Sainte-Chapelle.',
+      '<b>Barco por el Sena:</b> Bateaux Mouches o Vedettes du Pont Neuf, mejor al atardecer o de noche con la ciudad iluminada.',
+      '<b>Campos Elíseos y Arco del Triunfo:</b> caminar con las luces de Navidad y subir al arco para ver la avenida y la Torre Eiffel.',
+      '<b>Montmartre:</b> la basílica del Sacré-Cœur con vista a todo París, la Plaza del Tertre con los pintores y el funicular.',
+      '<b>Galerías Lafayette:</b> el árbol de Navidad bajo la cúpula, las vitrinas animadas y la terraza gratis con vista.',
+      '<b>Para los niños:</b> el Jardín de Luxemburgo con sus juegos y barquitos, o la Ciudad de las Ciencias.',
+      '<b>Qué comer:</b> crepes en la calle, croissants de panadería, chocolate caliente en Angelina y macarons de Ladurée.'
     ],
-    tip: 'El Louvre cierra los martes: el 29 de diciembre es martes, así que si quieren ir, que sea el 30. Compren entradas con horario en línea.'
+    tip: 'El metro es la forma más rápida de moverse; compren boletos en las máquinas o usen la app de RATP. Cuidado con los carteristas en el metro, en la Torre Eiffel y en Montmartre. Muchos museos son gratis para menores de 18.'
   },
   {
     place: 'Praga', who: 'Todos · 31 dic al 3 ene',
     items: [
-      'Plaza de la Ciudad Vieja y el Reloj Astronómico, que hace su espectáculo cada hora en punto.',
-      'Mercados de Navidad de la Ciudad Vieja y de la Plaza de Wenceslao (suelen seguir abiertos hasta el 6 de enero).',
-      'Puente de Carlos temprano en la mañana, antes de que se llene.',
-      'Castillo de Praga, la Catedral de San Vito y el Callejón del Oro.',
-      'Barrio de Malá Strana y subir al mirador de Petřín en funicular.',
-      'Probar el trdelník (pan dulce en espiral) y un goulash checo.'
+      '<b>Plaza de la Ciudad Vieja:</b> el Reloj Astronómico (show cada hora en punto), la iglesia de Týn y el mercado de Navidad con su árbol gigante.',
+      '<b>Puente de Carlos:</b> el puente de las estatuas; ir muy temprano para las fotos sin gente y tocar la estatua de San Juan Nepomuceno para la suerte.',
+      '<b>Castillo de Praga:</b> la Catedral de San Vito, el Antiguo Palacio Real y el Callejón del Oro, con casitas de colores que les encantan a los niños.',
+      '<b>Cambio de guardia:</b> en la entrada del castillo cada hora, y el más vistoso al mediodía con fanfarria.',
+      '<b>Malá Strana:</b> el barrio debajo del castillo, con la iglesia de San Nicolás y el muro de John Lennon.',
+      '<b>Colina de Petřín:</b> subir en funicular, la torre mirador (como una mini Torre Eiffel) y el laberinto de espejos, ideal para los niños.',
+      '<b>Plaza de Wenceslao:</b> la avenida principal, con otro mercado de Navidad y el Museo Nacional.',
+      '<b>Barrio Judío (Josefov):</b> sinagogas y el antiguo cementerio judío.',
+      '<b>Para los niños:</b> el Museo del Juguete en el castillo o el zoológico de Praga, de los mejores de Europa.',
+      '<b>Qué comer:</b> trdelník, salchichas y vino caliente en los mercados, goulash en pan, svíčková (res en salsa con knedlíky) y el pastel medovník.'
     ],
-    tip: 'La noche del 31 el centro se llena muchísimo y hay cohetes por todos lados. Con los niños es mejor ver los fuegos desde un mirador como Letná o Petřín. El 1 de enero muchos lugares abren tarde o cierran.'
+    tip: 'La moneda es la corona checa, no el euro: paguen con tarjeta o cambien en casas de cambio confiables, nunca en la calle. La noche del 31 el centro se llena y hay cohetes por todos lados; con los niños, mejor un mirador como Letná o Petřín. El 1 de enero muchos lugares abren tarde o cierran. Hace mucho frío: ropa térmica.'
   },
   {
     place: 'Madrid', who: 'Todos · 3 al 7 ene',
     items: [
-      'Cabalgata de Reyes la tarde del 5 de enero: el gran desfile de los Reyes Magos por el centro. Lleguen temprano para buscar lugar.',
-      'Roscón de Reyes el 6 de enero, como lo celebran los españoles.',
-      'Parque del Retiro: el lago con botes y el Palacio de Cristal.',
-      'Palacio Real, Plaza Mayor y Puerta del Sol con el oso y el madroño.',
-      'Chocolate con churros en San Ginés.',
-      'Tour del estadio Santiago Bernabéu, ideal para los niños.',
-      'Museo del Prado (con los niños, una visita corta a las obras principales).'
+      '<b>Cabalgata de Reyes (5 ene, en la tarde):</b> el gran desfile de los Reyes Magos por la Castellana y Cibeles, con carrozas y dulces para los niños. Lleguen temprano.',
+      '<b>Roscón de Reyes (6 ene):</b> desayunarlo como los españoles; el que encuentra la figurita tiene suerte.',
+      '<b>Parque del Retiro:</b> botes en el lago, el Palacio de Cristal y los titiriteros y artistas callejeros.',
+      '<b>Puerta del Sol y Plaza Mayor:</b> el kilómetro cero, el oso y el madroño, y la plaza con sus arcos.',
+      '<b>Palacio Real:</b> uno de los palacios más grandes de Europa, con la Catedral de la Almudena al lado y los jardines de Sabatini.',
+      '<b>Estadio Santiago Bernabéu:</b> el tour por el museo, los vestidores y la cancha del Real Madrid; reservar en línea.',
+      '<b>Museo del Prado:</b> Velázquez, Goya y El Bosco; con los niños, una visita corta a las obras principales.',
+      '<b>Gran Vía:</b> la avenida de los edificios bonitos y las tiendas, con luces de Navidad.',
+      '<b>Templo de Debod:</b> un templo egipcio de verdad, con el mejor atardecer de Madrid.',
+      '<b>Para los niños:</b> el Parque Warner, el Zoo Aquarium o el Museo del Ferrocarril.',
+      '<b>Qué comer:</b> chocolate con churros en San Ginés, bocadillo de calamares en la Plaza Mayor, tapas en el Mercado de San Miguel y jamón ibérico.'
     ],
-    tip: 'El 6 de enero es feriado y muchas tiendas cierran. El 7 el vuelo sale a las 11:50 de la T4S: salgan al aeropuerto con tiempo, lleguen unas 3 horas antes.'
+    tip: 'El 6 de enero es feriado y muchas tiendas cierran: hagan las compras el 4 o el 5. Los españoles cenan tarde, muchos restaurantes abren para cenar a las 20:30 o 21:00. El 7 el vuelo sale a las 11:50 de la T4S: estén en el aeropuerto unas 3 horas antes.'
   }
 ];
 
