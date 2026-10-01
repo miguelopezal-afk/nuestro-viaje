@@ -72,14 +72,21 @@ const recs = [
   {
     place: 'Londres', who: 'Christofer y Fabián · 22 al 26 dic',
     items: [
-      'Westminster: Big Ben, el Parlamento y la Abadía, y cruzar el puente para ver el London Eye.',
-      'Torre de Londres (las Joyas de la Corona) y caminar por el Tower Bridge.',
-      'Cambio de guardia en el Palacio de Buckingham y paseo por St James’s Park.',
-      'Luces de Navidad en Regent Street, Oxford Street y Covent Garden.',
-      'Hyde Park Winter Wonderland: feria navideña con juegos y comida.',
-      'British Museum (entrada gratis) y un fish & chips en un pub.'
+      '<b>Westminster:</b> Big Ben, el Parlamento y la Abadía de Westminster; cruzar el puente para ver el London Eye y, si quieren, subirse.',
+      '<b>Buckingham:</b> cambio de guardia (ver el horario en la web de la Guardia Real) y caminar por St James’s Park hasta Trafalgar Square.',
+      '<b>Torre de Londres:</b> las Joyas de la Corona y los Beefeaters; después cruzar el Tower Bridge y bajar a su mirador de piso de vidrio.',
+      '<b>Museos gratis:</b> British Museum (la Piedra Rosetta), National Gallery en Trafalgar y el Museo de Historia Natural con la pista de hielo navideña.',
+      '<b>Luces de Navidad:</b> Regent Street, Oxford Street, Carnaby Street y Covent Garden con su árbol gigante y mercado.',
+      '<b>Winter Wonderland en Hyde Park:</b> feria navideña con juegos, pista de hielo, mercado y comida. Comprar entrada en línea.',
+      '<b>Camden Market:</b> puestos de comida de todo el mundo y tiendas alternativas; ideal para almorzar.',
+      '<b>Notting Hill y Portobello Road:</b> casas de colores y el mercado (los sábados está completo).',
+      '<b>Soho y Chinatown:</b> para cenar y salir en la noche; Leicester Square está al lado.',
+      '<b>Harry Potter:</b> andén 9¾ en la estación de King’s Cross (gratis) o el tour de los estudios Warner Bros (reservar con mucha anticipación).',
+      '<b>Fútbol:</b> tour del estadio de Chelsea (Stamford Bridge), Arsenal (Emirates) o Tottenham; el Boxing Day (26 dic) hay partidos de Premier League.',
+      '<b>Qué comer:</b> fish & chips en un pub, un Sunday roast, el afternoon tea y el desayuno inglés completo.',
+      '<b>Vistas:</b> Sky Garden (gratis, reservar en línea) o The Shard para ver toda la ciudad.'
     ],
-    tip: 'El 25 de diciembre no hay metro ni casi transporte en Londres y casi todo cierra; el 26 el servicio es limitado. Planeen ese día caminando cerca del hotel.'
+    tip: 'El 25 de diciembre no hay metro, trenes ni autobuses en Londres y casi todo cierra, incluidos museos y restaurantes: reserven la cena de Navidad con tiempo y planeen ese día caminando cerca del hotel. El 26 (Boxing Day) hay transporte limitado y es día de rebajas en las tiendas. Compren una tarjeta Oyster o paguen con tarjeta sin contacto en el metro.'
   },
   {
     place: 'Disneyland Paris', who: 'Todos · 26 al 29 dic',
