@@ -35,7 +35,7 @@ function updateCountdown() {
 const itinerary = [
   { day: '★', date: '21 al 26 dic · Londres', title: 'Christofer y Fabián se adelantan', text: 'Salen el 21 de diciembre (IB222 y IB721) y llegan a Londres el 22. Pasan la Navidad ahí y el 26 nos alcanzan en París.', free: true, plan: ['22 dic: llegan a Heathrow 17:15; hotel y cena tranquila.', '23 dic: Westminster, Big Ben, London Eye y cambio de guardia en Buckingham.', '24 dic: Torre de Londres y Tower Bridge; en la noche, luces de Regent Street y Covent Garden.', '25 dic: Navidad sin metro; caminar por Hyde Park y la zona del hotel.', '26 dic: viajan de Londres a París y nos juntamos todos (el Eurostar sí opera ese día; el 25 no).'] },
   { day: 1, date: 'Vie 25 dic · Guatemala → Madrid', title: 'Navidad en el aire', text: 'Vuelo IB222 desde La Aurora a las 18:15, con escala en San Salvador. Noche a bordo rumbo a Madrid.', plan: ['Comer bien antes de salir y llegar a La Aurora unas 3 horas antes.', 'Ropa cómoda y una muda en la mochila de mano; tratar de dormir en el vuelo.'] },
-  { day: 2, date: 'Sáb 26 dic · Madrid → París', title: 'Llegamos a Europa', text: 'Llegada a Madrid (T4S) a las 14:05 y conexión IB589 a las 15:45. Llegada a París Charles de Gaulle (T2D) a las 17:55 y traslado a Disneyland Paris. Christofer y Fabián también llegan a París este día: nos juntamos todos.', plan: ['Conexión corta en Madrid (1 h 40 min): ir directo a la puerta del IB589.', 'Llegando a CDG, traslado a Disney (unos 40 min en auto o el autobús Magical Shuttle).', 'Cena en Disney Village y a descansar: mañana empieza la magia.'] },
+  { day: 2, date: 'Sáb 26 dic · Madrid → París', title: 'Llegamos a Europa', text: 'Llegada a Madrid (T4S) a las 14:05 y conexión IB589 a las 15:45. Llegada a París Charles de Gaulle (T2D) a las 17:55 y traslado a Les Villages Nature Paris, nuestro hotel de Disney. Christofer y Fabián también llegan a París este día: nos juntamos todos.', plan: ['Conexión corta en Madrid (1 h 40 min): ir directo a la puerta del IB589.', 'Llegando a CDG, traslado a Disney (unos 40 min en auto o el autobús Magical Shuttle).', 'Cena en Disney Village y a descansar: mañana empieza la magia.'] },
   { day: 3, date: 'Dom 27 dic · Disneyland Paris', title: 'Día de Disney', text: 'Primer día completo en los parques.', plan: ['Llegar a la apertura y empezar por Fantasyland: Peter Pan, Dumbo e It’s a Small World.', 'Adventureland: Piratas del Caribe. Frontierland: Big Thunder Mountain.', 'En la tarde, el desfile de Navidad por Main Street.', 'En la noche, el espectáculo de fuegos artificiales frente al castillo.'] },
   { day: 4, date: 'Lun 28 dic · Disneyland Paris', title: 'Día de Disney', text: 'Segundo día en los parques.', plan: ['Mañana en el segundo parque (Walt Disney Studios): Ratatouille, Avengers y Toy Story.', 'Tarde de regreso en Disneyland Park: Discoveryland (Buzz Lightyear, Star Wars Hyperspace Mountain) y repetir las favoritas.', 'Fotos con personajes y compras de recuerdos.'] },
   { day: 5, date: 'Mar 29 dic · Disney → París', title: 'Nos mudamos al centro', text: 'Última mañana en Disney y traslado al hotel en el centro de París.', plan: ['Última mañana en Disney o una comida con personajes.', 'Traslado al centro de París (el tren RER A llega directo en unos 40 min).', 'Al atardecer, subir a la Torre Eiffel (boletos comprados antes).', 'En la noche, ver el centelleo de la torre desde Trocadero y las luces de los Campos Elíseos.', 'Ojo: el Louvre cierra los martes.'] },
@@ -52,7 +52,7 @@ const itinerary = [
 
 const stays = [
   { city: 'Londres · Christofer y Fabián', dates: '22 al 26 dic', nights: '4 noches', name: 'London Marriott Hotel Kensington', addr: '147c Cromwell Road, Kensington y Chelsea, Londres SW5 0TH', tel: '+44 20 7973 1000', hours: 'Entrada desde las 15:00 · salida antes de las 12:00' },
-  { city: 'Disneyland Paris', dates: '26 al 29 dic', nights: '3 noches', pending: 'Hotel por reservar' },
+  { city: 'Disneyland Paris', dates: '26 al 29 dic', nights: '3 noches', name: 'Les Villages Nature Paris', addr: 'Paquete hotel + entradas · 1 habitación para 6 (4 adultos y 2 niños)', hours: 'Entradas: 3 días, 2 parques (Disneyland Park y Walt Disney Studios)' },
   { city: 'Centro de París', dates: '29 al 31 dic', nights: '2 noches', name: 'Apartments Du Louvre - Le Marais', addr: '4 Rue Etienne Marcel, 2º distrito, 75002 París', tel: '+33 1 88 40 13 85', hours: 'Entrada desde las 15:00 · salida antes de las 10:00' },
   { city: 'Praga', dates: '31 dic al 3 ene', nights: '3 noches · Año Nuevo', name: 'Mamaison Residence Downtown Prague', addr: 'Na Rybníčku 5, 120 00 Praga', tel: '+420 221 022 102', hours: 'Entrada desde las 15:00 · salida antes de las 12:00' },
   { city: 'Madrid', dates: '3 al 7 ene', nights: '4 noches · regreso a casa', pending: 'Hotel por reservar' }
@@ -154,7 +154,7 @@ const info = [
   { label: 'Viajeros', value: '6 en total, 4 adultos y 2 niños. Adultos: Miguel, Krystel, Christofer y Fabián. Niños: Santiago y José Joaquín. Christofer y Fabián se adelantan a Londres el 21 de diciembre.' },
   { label: 'Check-in', value: 'En línea en iberia.com, se abre 24 h antes de cada vuelo', href: 'https://www.iberia.com' },
   { label: 'Equipaje', value: 'Ida 25 dic: sin maleta facturada (0PC). Vuelta 7 ene: 1 maleta facturada por persona (1PC)' },
-  { label: 'Pendiente', value: 'Boletos de Londres a París de Christofer y Fabián (26 dic), cambiar el vuelo de regreso de Christofer (1 ene), hoteles de Disney y Madrid, detalles del vuelo París CDG → Praga (31 dic en la mañana) y vuelo Praga → Madrid (3 ene en la tarde)' },
+  { label: 'Pendiente', value: 'Boletos de Londres a París de Christofer y Fabián (26 dic), cambiar el vuelo de regreso de Christofer (1 ene), hotel de Madrid, detalles del vuelo París CDG → Praga (31 dic en la mañana) y vuelo Praga → Madrid (3 ene en la tarde)' },
   { label: 'Agencia', value: 'Town Tkt Office · Av. La Reforma 8-60 zona 9, Edificio Galerías Reforma · Tel. 2202-4949', href: 'tel:+50222024949' }
 ];
 
@@ -169,7 +169,7 @@ function renderTrip() {
     <article class="hotel-card${h.pending ? ' pending' : ''}">
       <span class="hotel-city">${h.city} · ${h.dates} · ${h.nights}</span>
       <span class="hotel-name">${h.name || h.pending}</span>
-      ${h.addr ? `<p>${h.addr}<br />Tel: <a href="${telHref(h.tel)}">${h.tel}</a><br />${h.hours}</p>` : ''}
+      ${h.addr ? `<p>${h.addr}${h.tel ? `<br />Tel: <a href="${telHref(h.tel)}">${h.tel}</a>` : ''}<br />${h.hours}</p>` : ''}
     </article>`).join('');
 
   dayList.innerHTML = itinerary.map((d) => `
