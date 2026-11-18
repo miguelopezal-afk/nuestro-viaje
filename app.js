@@ -77,6 +77,16 @@ const recs = [
       '<b>Qué comer:</b> fish & chips en un pub, un Sunday roast, el afternoon tea y el desayuno inglés completo.',
       '<b>Vistas:</b> Sky Garden (gratis, reservar en línea) o The Shard para ver toda la ciudad.'
     ],
+    hotel: 'London Marriott Kensington · Cromwell Road',
+    nearby: [
+      '<b>Metro:</b> las estaciones Gloucester Road (líneas Piccadilly, District y Circle) y Earl’s Court están a 5 minutos caminando.',
+      '<b>Desde Heathrow el 22:</b> la línea Piccadilly va directo de la T5 a Gloucester Road en unos 45 minutos, sin cambios. Mucho más barato que un taxi.',
+      '<b>Caminando (10–12 min):</b> los tres museos gratis de South Kensington: Historia Natural (con la pista de hielo navideña), Ciencia y el V&A, todos sobre Cromwell Road.',
+      '<b>Caminando (15–20 min):</b> Hyde Park y Kensington Gardens, el Palacio de Kensington y el Royal Albert Hall. Harrods está a 20 minutos o a una parada de metro (Knightsbridge).',
+      '<b>Al centro:</b> la Piccadilly llega directo a Piccadilly Circus, Leicester Square y Covent Garden en 15 minutos; la District va a Westminster (Big Ben) en 10.',
+      '<b>Día de Navidad sin metro:</b> todo lo de arriba (museos cerrados, pero parques y palacio sí) se hace caminando desde el hotel.',
+      '<b>Al Eurostar el 26:</b> la Piccadilly va directo a King’s Cross St Pancras en unos 25 minutos. Lleguen a la estación al menos 1 hora antes por el control de pasaportes.'
+    ],
     tip: 'El 25 de diciembre no hay metro, trenes ni autobuses en Londres y casi todo cierra, incluidos museos y restaurantes: reserven la cena de Navidad con tiempo y planeen ese día caminando cerca del hotel. El 26 (Boxing Day) hay transporte limitado y es día de rebajas en las tiendas. Compren una tarjeta Oyster o paguen con tarjeta sin contacto en el metro.'
   },
   {
@@ -96,6 +106,14 @@ const recs = [
       '<b>Nuestro hotel, Les Villages Nature Paris:</b> queda a unos 15 minutos en carro de los parques, no dentro de Disney. Hay autobús gratis del hotel a los parques; revisen los horarios para llegar a la apertura.',
       '<b>Aqualagon:</b> el parque acuático bajo techo del hotel, con agua caliente e incluido en la estadía. Ideal para la tarde del 26 al llegar del vuelo, o en la noche después de los parques. Lleven trajes de baño.'
     ],
+    hotel: 'Les Villages Nature Paris · Bailly-Romainvilliers',
+    nearby: [
+      '<b>Desde CDG el 26:</b> lo más rápido es el tren TGV de la terminal 2 a Marne-la-Vallée Chessy (10 minutos, hay que comprar boleto) y de ahí taxi o el autobús del hotel; también está el Magical Shuttle, un bus directo de unos 45 minutos.',
+      '<b>A los parques:</b> autobús gratis del hotel, unos 20 minutos. Revisen la primera salida de la mañana para estar en la puerta a la apertura.',
+      '<b>Las casitas tienen cocina:</b> hay supermercado en el complejo; comprar desayuno y meriendas ahorra bastante con 6 personas.',
+      '<b>Cerca:</b> el outlet La Vallée Village y el centro comercial Val d’Europe, a 10 minutos en carro, por si necesitan algo.',
+      '<b>Al centro de París el 29:</b> desde la estación Marne-la-Vallée Chessy el RER A va directo a Châtelet–Les Halles en 40 minutos, y de ahí el apartamento está a 5 minutos a pie.'
+    ],
     tip: 'Son de las fechas más llenas del año: lleguen a la apertura y hagan primero lo más popular, usen la app de Disneyland Paris para ver tiempos de espera y reservar comidas, y consideren Premier Access para Peter Pan, Ratatouille y Big Thunder. Hace frío: gorro, guantes y capas de ropa para los niños.'
   },
   {
@@ -112,6 +130,15 @@ const recs = [
       '<b>Galerías Lafayette:</b> el árbol de Navidad bajo la cúpula, las vitrinas animadas y la terraza gratis con vista.',
       '<b>Para los niños:</b> el Jardín de Luxemburgo con sus juegos y barquitos, o la Ciudad de las Ciencias.',
       '<b>Qué comer:</b> crepes en la calle, croissants de panadería, chocolate caliente en Angelina y macarons de Ladurée.'
+    ],
+    hotel: 'Apartments du Louvre Le Marais · Rue Étienne Marcel, 2º distrito',
+    nearby: [
+      '<b>Ubicación de lujo:</b> están en pleno centro, junto a Les Halles, entre el Louvre y el Marais. Casi todo lo importante queda caminando.',
+      '<b>Caminando:</b> Centro Pompidou (5 min), Louvre y Tullerías (10 min), el Marais y la Plaza de los Vosgos (10 min), Notre-Dame y la Sainte-Chapelle (12 min), Pont Neuf y el Sena (8 min).',
+      '<b>Rue Montorgueil:</b> a 2 minutos, la calle de mercado más rica de París: panaderías, quesos, crepes y la pastelería Stohrer, la más antigua de la ciudad. Perfecta para el desayuno.',
+      '<b>Metro:</b> Châtelet–Les Halles es la estación más conectada de París. Línea 1 a los Campos Elíseos y el Arco del Triunfo; línea 4 a Montmartre; RER C desde Saint-Michel a la Torre Eiffel.',
+      '<b>Galerías Lafayette:</b> 20 minutos caminando por la Ópera, o línea 7 (metro Chaussée d’Antin).',
+      '<b>A CDG el 31:</b> el RER B sale directo de Châtelet–Les Halles al aeropuerto en 35–45 minutos. Con 6 personas y maletas, un taxi o van (unos 55–65 € tarifa fija) puede ser más cómodo a esa hora.'
     ],
     tip: 'El metro es la forma más rápida de moverse; compren boletos en las máquinas o usen la app de RATP. Cuidado con los carteristas en el metro, en la Torre Eiffel y en Montmartre. Muchos museos son gratis para menores de 18.'
   },
@@ -130,6 +157,15 @@ const recs = [
       '<b>Para los niños:</b> el Museo del Juguete en el castillo o el zoológico de Praga, de los mejores de Europa.',
       '<b>Qué comer:</b> trdelník, salchichas y vino caliente en los mercados, goulash en pan, svíčková (res en salsa con knedlíky) y el pastel medovník.'
     ],
+    hotel: 'Mamaison Residence Downtown · Na Rybníčku, Ciudad Nueva',
+    nearby: [
+      '<b>Metro y tranvía:</b> la estación I. P. Pavlova (línea C) y la parada Karlovo náměstí están a 5 minutos. Compren boletos de 24 o 72 horas; sirven para metro, tranvía y bus.',
+      '<b>Caminando:</b> Plaza de Wenceslao y su mercado de Navidad (10 min), Plaza de la Ciudad Vieja y el Reloj Astronómico (20 min), Puente de Carlos (25 min).',
+      '<b>Al castillo:</b> el tranvía 22 desde Karlovo náměstí sube hasta la parada Pražský hrad; así se ahorran la cuesta y bajan caminando por Malá Strana.',
+      '<b>Fin de año con los niños:</b> la fortaleza de Vyšehrad está a 15 minutos caminando al sur del hotel. Es un mirador alto, tranquilo y lejos del tumulto del centro para ver los fuegos de medianoche sobre el río.',
+      '<b>Para comer cerca:</b> la zona de Vinohrady, a 10 minutos, tiene muchos restaurantes y cafés buenos y menos turísticos que el centro.',
+      '<b>Al aeropuerto el 3:</b> taxi o Uber, unos 30–40 minutos; con 6 personas y maletas, pidan una van. Dejen las maletas en el hotel por la mañana y paseen hasta la hora de salir.'
+    ],
     tip: 'La moneda es la corona checa, no el euro: paguen con tarjeta o cambien en casas de cambio confiables, nunca en la calle. La noche del 31 el centro se llena y hay cohetes por todos lados; con los niños, mejor un mirador como Letná o Petřín. El 1 de enero muchos lugares abren tarde o cierran. Hace mucho frío: ropa térmica.'
   },
   {
@@ -147,6 +183,11 @@ const recs = [
       '<b>Templo de Debod:</b> un templo egipcio de verdad, con el mejor atardecer de Madrid.',
       '<b>Para los niños:</b> el Parque Warner, el Zoo Aquarium o el Museo del Ferrocarril.',
       '<b>Qué comer:</b> chocolate con churros en San Ginés, bocadillo de calamares en la Plaza Mayor, tapas en el Mercado de San Miguel y jamón ibérico.'
+    ],
+    hotel: 'Hotel por reservar',
+    nearby: [
+      'Cuando reserven el hotel, mándenme la dirección y les armo esta parte: qué queda caminando, qué metro tomar y cómo ir a la T4 el 7 en la mañana.',
+      '<b>Sugerencia para elegir zona:</b> entre Sol, Gran Vía, Ópera y el Retiro todo queda a pie, y desde Nuevos Ministerios o Sol hay tren directo a la T4 (Cercanías C-1, unos 25 minutos).'
     ],
     tip: 'El 6 de enero es feriado y muchas tiendas cierran: hagan las compras el 4 o el 5. Los españoles cenan tarde, muchos restaurantes abren para cenar a las 20:30 o 21:00. El 7 el vuelo sale a las 11:50 de la T4S: estén en el aeropuerto unas 3 horas antes.'
   }
@@ -190,6 +231,7 @@ function renderTrip() {
         <span class="hotel-city">${r.who}</span>
         <span class="hotel-name">${r.place}</span>
         <ul>${r.items.map((it) => `<li>${it}</li>`).join('')}</ul>
+        ${r.nearby ? `<p class="rec-sub">Desde el hotel · ${r.hotel}</p><ul class="rec-nearby">${r.nearby.map((it) => `<li>${it}</li>`).join('')}</ul>` : ''}
         <p class="rec-tip"><b>Ojo:</b> ${r.tip}</p>
       </article>`).join('');
   }

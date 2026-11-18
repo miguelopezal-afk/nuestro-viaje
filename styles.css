@@ -93,3 +93,6 @@ h2 { margin: 6px 0 14px; font-size: 1.45rem; line-height: 1.1; }
 .rec-photo { display: block; width: calc(100% + 28px); margin: -14px -14px 12px; aspect-ratio: 16 / 10; object-fit: cover; object-position: center 30%; border-radius: 8px 8px 0 0; }
 .date-sub { margin: 4px 0 0; font-size: 0.82rem; font-weight: 700; color: rgba(255, 255, 255, 0.78); }
 .hotel-card.pending { border-style: dashed; border-color: var(--gold); } .hotel-card.pending .hotel-name { color: var(--muted); }
+.rec-sub { margin: 14px 0 6px; color: var(--teal); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+.rec-nearby { margin: 0; padding-left: 18px; color: var(--ink); font-size: 0.9rem; line-height: 1.5; font-weight: 600; }
+.rec-nearby li { margin-bottom: 4px; }
