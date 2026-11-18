@@ -51,10 +51,11 @@ const itinerary = [
 ];
 
 const stays = [
-  { city: 'Disneyland Paris', dates: '26 al 29 dic', nights: '3 noches' },
-  { city: 'Centro de París', dates: '29 al 31 dic', nights: '2 noches' },
-  { city: 'Praga', dates: '31 dic al 3 ene', nights: '3 noches · Año Nuevo' },
-  { city: 'Madrid', dates: '3 al 7 ene', nights: '4 noches · regreso a casa' }
+  { city: 'Londres · Christofer y Fabián', dates: '22 al 26 dic', nights: '4 noches', name: 'London Marriott Hotel Kensington', addr: '147c Cromwell Road, Kensington y Chelsea, Londres SW5 0TH', tel: '+44 20 7973 1000', hours: 'Entrada desde las 15:00 · salida antes de las 12:00' },
+  { city: 'Disneyland Paris', dates: '26 al 29 dic', nights: '3 noches', pending: 'Hotel por reservar' },
+  { city: 'Centro de París', dates: '29 al 31 dic', nights: '2 noches', name: 'Apartments Du Louvre - Le Marais', addr: '4 Rue Etienne Marcel, 2º distrito, 75002 París', tel: '+33 1 88 40 13 85', hours: 'Entrada desde las 15:00 · salida antes de las 10:00' },
+  { city: 'Praga', dates: '31 dic al 3 ene', nights: '3 noches · Año Nuevo', name: 'Mamaison Residence Downtown Prague', addr: 'Na Rybníčku 5, 120 00 Praga', tel: '+420 221 022 102', hours: 'Entrada desde las 15:00 · salida antes de las 12:00' },
+  { city: 'Madrid', dates: '3 al 7 ene', nights: '4 noches · regreso a casa', pending: 'Hotel por reservar' }
 ];
 
 const recs = [
@@ -153,7 +154,7 @@ const info = [
   { label: 'Viajeros', value: '6 en total, 4 adultos y 2 niños. Adultos: Miguel, Krystel, Christofer y Fabián. Niños: Santiago y José Joaquín. Christofer y Fabián se adelantan a Londres el 21 de diciembre.' },
   { label: 'Check-in', value: 'En línea en iberia.com, se abre 24 h antes de cada vuelo', href: 'https://www.iberia.com' },
   { label: 'Equipaje', value: 'Ida 25 dic: sin maleta facturada (0PC). Vuelta 7 ene: 1 maleta facturada por persona (1PC)' },
-  { label: 'Pendiente', value: 'Boletos de Londres a París de Christofer y Fabián (26 dic), cambiar el vuelo de regreso de Christofer (1 ene), hoteles, detalles del vuelo París CDG → Praga (31 dic en la mañana) y vuelo Praga → Madrid (3 ene en la tarde)' },
+  { label: 'Pendiente', value: 'Boletos de Londres a París de Christofer y Fabián (26 dic), cambiar el vuelo de regreso de Christofer (1 ene), hoteles de Disney y Madrid, detalles del vuelo París CDG → Praga (31 dic en la mañana) y vuelo Praga → Madrid (3 ene en la tarde)' },
   { label: 'Agencia', value: 'Town Tkt Office · Av. La Reforma 8-60 zona 9, Edificio Galerías Reforma · Tel. 2202-4949', href: 'tel:+50222024949' }
 ];
 
@@ -163,10 +164,12 @@ function renderTrip() {
   const stayList = document.getElementById('stayList');
   if (!dayList || !infoList || !stayList) return;
 
+  const telHref = (tel) => `tel:${tel.replace(/[^+\d]/g, '')}`;
   stayList.innerHTML = stays.map((h) => `
-    <article class="hotel-card">
-      <span class="hotel-city">${h.dates} · ${h.nights}</span>
-      <span class="hotel-name">${h.city}</span>
+    <article class="hotel-card${h.pending ? ' pending' : ''}">
+      <span class="hotel-city">${h.city} · ${h.dates} · ${h.nights}</span>
+      <span class="hotel-name">${h.name || h.pending}</span>
+      ${h.addr ? `<p>${h.addr}<br />Tel: <a href="${telHref(h.tel)}">${h.tel}</a><br />${h.hours}</p>` : ''}
     </article>`).join('');
 
   dayList.innerHTML = itinerary.map((d) => `
