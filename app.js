@@ -230,8 +230,9 @@ function renderTrip() {
         ${r.photo ? `<img class="rec-photo" src="${r.photo}" alt="${r.place}" />` : ''}
         <span class="hotel-city">${r.who}</span>
         <span class="hotel-name">${r.place}</span>
+        ${r.nearby ? `<p class="rec-sub">Desde nuestro hotel · ${r.hotel}</p><ul class="rec-nearby">${r.nearby.map((it) => `<li>${it}</li>`).join('')}</ul>` : ''}
+        <p class="rec-sub">Qué ver y hacer</p>
         <ul>${r.items.map((it) => `<li>${it}</li>`).join('')}</ul>
-        ${r.nearby ? `<p class="rec-sub">Desde el hotel · ${r.hotel}</p><ul class="rec-nearby">${r.nearby.map((it) => `<li>${it}</li>`).join('')}</ul>` : ''}
         <p class="rec-tip"><b>Ojo:</b> ${r.tip}</p>
       </article>`).join('');
   }
